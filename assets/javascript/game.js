@@ -9,30 +9,23 @@ var compChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","
 document.onkeyup = function(event) {
 var userChoice = String.fromCharCode(event.keyCode).toLocaleLowerCase();
 var computerGuess = compChoices[Math.floor(Math.random()*compChoices.length)];
-console.log(compChoices)
+console.log(computerGuess)
 guessesSoFar.push(userChoice); 
 
 // --Winning
 if (userChoice === computerGuess){
   wins++;
-  guessesLeft =5
-  guessesSoFar.length
-  getElementById("wins").innerHtml(wins)
-};
-
+  // --adding to incorrect guesses
+}else {
+    guessesLeft --;
+  }
 // --Losing
-else if (guessesLeft === 0){
-  losses ++;
-  guessesLeft = 5;
-  guessesSoFar.length = 0;
-  getElementById("losses").innerHtml(losses)
-};
-
-// --adding to incorrect guesses
-else if (userChoice !== computerGuess){
-  guessesLeft --;
-
-};
-
-
+if (guessesLeft = 5) {
+    guessesLeft === 0;
+    losses ++;
+  };
+        document.getElementById("wins").innerHtml = "wins" + wins ;
+        document.getElementById("losses").innerHtml ="losses" + losses;
+        document.getElementById("guessesLeft").innerHTML = "Guesses left: " + guessesLeft;
+        document.getElementById("guessesSoFar").innerHTML = "Guesses So Far :" + guessesSoFar;
 };
