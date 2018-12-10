@@ -1,7 +1,6 @@
 body{
     margin: auto;
-    background-color: aquamarine;
-    background-image: url("../images/Ball\ 2.jpeg");
+    background-color: rgb(5, 5, 5);
     width:980px;
 }
 .container{
@@ -11,8 +10,16 @@ body{
     text-align: center;
     padding: 275px;
     padding-left: 412px;
+    background-image: url("../images/Ball\ 2.jpeg");
+    background-image: no-repeat;
+    margin:auto;
 }
 
 footer{
     font-size:3px;
+    color: #ff0000;
+    padding:4px;
+    text-align: right;
+    background-image: url("../images/Ball2footer.jpg");
+    height: 20px;
 }
