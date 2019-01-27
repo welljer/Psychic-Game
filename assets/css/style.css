@@ -4,7 +4,7 @@ body{
     width:980px;
 }
 .container{
-    color:#991919;
+    color:black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -13,6 +13,17 @@ body{
     background-image: url("../images/Ball\ 2.jpeg");
     background-image: no-repeat;
     margin:auto;
+}
+
+.containerTwo{
+    border: 2px black;
+    padding:10px;
+    border-radius: 5px;
+    background-color: grey;
+    margin: auto;
+    text-align: center;
+
+
 }
 
 footer{
